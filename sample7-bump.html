@@ -30,12 +30,12 @@
 
    // テクスチャー読み込み
    var textureLoader = new THREE.TextureLoader();  
-  var texture = textureLoader.load("tiger01");
+  var texture = textureLoader.load("tiger01.jpg");
   var mat = new THREE.MeshPhongMaterial();
   mat.map = texture;
   
   // バンプマップ読み込み
-  var bump = textureLoader.load("tiger01");
+  var bump = textureLoader.load("tiger01.jpg");
   mat.bumpMap = bump;
   mat.bumpscale = 0.2;
 
